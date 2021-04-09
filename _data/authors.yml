@@ -47,20 +47,16 @@ xplor4r:
       - title: "facebook"
         url: "https://www.facebook.com/sujay.kundu2"
 
-# 2rohyun:
-#    name: dohyun lee
-#    username: 2rohyun
-#    site: https://2rohyun.github.io
-#    avatar: rohyun.png
-#    bio: "항상 배우려고 노력하는 백엔드 개발자 꿈나무"
-#    email: dlehgus565656@gmail.com
-#    social:
-#       - title: "github"
-#         url: "https://2rohyun.github.io"
-#       - title: "instagram"
-#         url: "https://www.instagram.com/dohc"
-#       - title: "youtube"
-#         url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
-#       - title: "facebook"
-#         url: "https://www.facebook.com/sujay.kundu2"
+2rohyun:
+   name: dohyun lee
+   username: 2rohyun
+   site: https://2rohyun.github.io
+   avatar: rohyun.png
+   bio: "항상 배우려고 노력하는 백엔드 개발자 꿈나무"
+   email: dlehgus565656@gmail.com
+   social:
+      - title: "github"
+        url: "https://www.github.com/2rohyun"
+      - title: "instagram"
+        url: "https://www.instagram.com/dohc"
 
