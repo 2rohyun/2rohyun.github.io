@@ -26,7 +26,7 @@ urls:
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: rohyun.jpeg
+author_logo: rohyun.png
 author: Rohyun
 author_bio: 개발과 관련된 기술적 지식과 정처없이 떠다니는 생각들을 붙잡아두는 공간입니다.
 author_email: "dlehgus565656@gmail.com"
@@ -35,53 +35,53 @@ author_website_url: "https://2rohyun.github.io"
 typewrite-text: 개발, 그리고 복잡한 머릿 속의 기록을 남기는 공간
 
 # Experiences
-author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
-              visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
-              visibility: true
+# author_work_experiences:
+#             - company_name: Google
+#               company_logo: google.png
+#               company_url: https://google.com
+#               designation: Software Engineer
+#               description: Worked on various Google Products
+#               visibility: true
+#             - company_name: Microsoft
+#               company_logo: microsoft.png
+#               company_url: https://microsoft.com
+#               designation: Azure Developer
+#               description: Worked on various Azure Cloud Products
+#               visibility: true
 
 # Education
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
+              - college_logo: dongguk.png
+                college_name: Dongguk Univ.
+                college_url: http://www.dongguk.ac.kr
                 college_degree: CS Engineer
                 description: Bachelor of Technology
                 visibility: true
 
 # Projects
-author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
-                visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
-                visibility: true
+# author_project_details:
+#               - project_thumbnail: gamershub.png
+#                 project_title: Gamers Hub
+#                 project_description: A Platform built for Gamers and Game Devs
+#                 project_url: https://gamershub.in
+#                 visibility: true
+#               - project_thumbnail: hack4r.PNG
+#                 project_title: Hack4r
+#                 project_description: A Platform built for Hackers and Penetration Testers
+#                 project_url: https://hack4r.com
+#                 visibility: true
 
 # social links
-twitter_username: johndoe
-github_username:  sujaykundu777
-facebook_username: johndoe
-linkedin_username: johndoe
-behance_username: johndoe
-instagram_username: johndoe
-medium_username: johndoe
-telegram_username: johndoe
-dribbble_username: johndoe
-flickr_username: johndoe
+twitter_username: null
+github_username:  2rohyun
+facebook_username: null
+linkedin_username: null
+behance_username: null
+instagram_username: dohclaude
+medium_username: null
+telegram_username: null
+dribbble_username: null
+flickr_username: null
 
 #for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
 
