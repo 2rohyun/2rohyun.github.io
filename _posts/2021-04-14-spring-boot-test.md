@@ -42,19 +42,19 @@ usemathjax: false
 
 2. webEnvironment : 웹 테스트 환경을 선택할 수 있다.
 
-* Mock
+#### Mock
  - 실제 객체를 만들기에 비용과 시간이 많이 들거나 의존성이 연관되어 있어 제대로 구현하기 힘들 경우 가짜 객체를 만들어서 사용한다.
  - 내장 서블릿 컨테이너가 아닌 Mock 서블릿을 제공한다.
  - @AutoConfigureMockMvc : Mock 테스트 시 필요한 의존성을 제공해준다. 
  - MockMvc : 브라우저에서 요청과 응답을 의미하는 객체로서 Controller 테스트에 사용한다.
 
-* RANDOM_PORT
+#### RANDOM_PORT
  - EmbeddedWebApplicationContext 를 로드하며 실제 서블릿 환경 구성 (임의의 port를 listen)
 
-* DEFINED_PORT 
+#### DEFINED_PORT 
  - 실제 서블릿 환경 구성 (프로퍼티에서 지정한 포트를 listen)
 
-* NONE
+#### NONE
  - 기본적인 ApplicationContext 를 로드한다.
 
 > Application Context 란?
@@ -65,7 +65,7 @@ usemathjax: false
  - 서로 다른 여러 서블릿에서 공통으로 공유해서 사용할 수 있는 Bean 선언
  - Application Context 에 정의된 Bean 은 서블릿 Context 에 정의된 Bean 사용 불가.
 
-* TestRestTemplate
+#### TestRestTemplate
  - webEnvironment 설정에 맞게 자동으로 빈이 생성되며, RestTemplate 를 처리하기 위해 사용된다.
  - Spring 4.x 이후로 부터 지원하는 Spring HTTP 통신 템플릿
  - ResponseEntity 와 Server to Server 통신을 하는 데에 자주 쓰인다.
@@ -103,7 +103,10 @@ usemathjax: false
 
 
 ## REFERENCE
-https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-test-scope-dependencies
+https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-test-scope-dependencies)
+
 https://goddaehee.tistory.com/212?category=367461
+
 https://velog.io/@swchoi0329/Spring-Boot-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1
+
 https://velog.io/@jbb9229/springioccontainer
