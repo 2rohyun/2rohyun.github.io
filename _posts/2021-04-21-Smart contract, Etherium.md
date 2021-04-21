@@ -58,4 +58,6 @@ ex ) 친구와 내가 내일 비가 온다고 내기를 한다. 스마트 컨트
 
 스마트 컨트랙트를 지원하는 블록체인 : etherium, kusama, polkadot, cardano, cosmos etc..
 
+## REFERENCE
 
+https://www.youtube.com/watch?v=3I5_D-deQT0
