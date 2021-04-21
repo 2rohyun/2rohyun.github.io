@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Nomad Coder 님 영상 요약 #1.Concept of Blockchain?"
+title:  "Nomad Coder 님 영상 요약 #1.Concept of Blockchain"
 summary: "what is blockchain"
 author: 2rohyun
 date: '2021-04-21 11:17:23 +0900'

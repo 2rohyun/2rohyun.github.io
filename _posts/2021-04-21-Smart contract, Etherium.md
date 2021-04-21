@@ -7,7 +7,7 @@ date: '2021-04-21 11:17:23 +0900'
 category: blockchain
 thumbnail: /assets/img/posts/smart_contracts.png 
 keywords: blockchain, Smart contract, etherium
-permalink: /blog/what-is-blockchain/
+permalink: /blog/smart-contract-and-etherium/
 usemathjax: false
 ---
 # Smart contract, etherium
