@@ -7,7 +7,7 @@ date: '2021-04-21 11:17:23 +0900'
 category: blockchain
 thumbnail: /assets/img/posts/NFT.png 
 keywords: blockchain, NFT
-permalink: /blog/what-is-blockchain/
+permalink: /blog/concept-of-nft/
 usemathjax: false
 ---
 # NFT
