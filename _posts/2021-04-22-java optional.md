@@ -19,6 +19,7 @@ java.lang.NullPointerException을 안전하게 처리하기 위해
 Optional 객체를 생성하기 위한 시작 연산자
 
 1. Optional.of
+
 ```java
 // 메서드 시그니처
 public static <T> Optional<T> of(T value);
@@ -29,6 +30,7 @@ Optional<String> opt = Optional.of("result");
 value가 null 인 경우 NPE 예외 발생, 반드시 값이 있어야 하는 객체인 경우 사용
 
 2. Optional.ofNullable
+
 ```java
 // 메서드 시그니처
 public static <T> Optional<T> ofNullable(T value);
@@ -39,6 +41,7 @@ Optional<String> opt = Optional.ofNullable(null);
 value가 null 인 경우 비어있는 Optional 객체 반환, 값이 Null 일 수도 있는 경우 사용
 
 3. Optional.empty
+
 ```java
 // 메서드 시그니처
 public static<T> Optional<T> empty();
@@ -70,6 +73,7 @@ Optional<String> emptyOpt = Optional.empty();
 Optional 객체를 생성한 후 사용 가능한 메소드, 다시 Optional 객체를 반환한다.
 
 1. filter
+
 ```java
 // 메서드 시그니처
 public Optional<T> filter(Predicate<? super T> predicate);
@@ -99,6 +103,7 @@ final List<String> names = Arrays.asList("Sehoon", "Songwoo", "Chan", "Youngsuk"
 predicate 값이 참이면 해당 필터 통과, 거짓이면 통과 X
 
 2. map
+
 ```java
 // 메서드 시그니처
 public<U> Optional<U> map(Function<? super T, ? extends U> mapper);
@@ -122,6 +127,7 @@ final List<String> names = Arrays.asList("Sehoon", "Songwoo", "Chan", "Youngsuk"
 mapper 함수를 통해 입력값을 다른 값으로 변환하는 메소드이다.
 
 3. flatMap
+
 ```java
 // 메서드 시그니처
 public<U> Optional<U> flatMap(Function<? super T, Optional<U>> mapper);
@@ -161,6 +167,7 @@ stream은 컬렉션, 배열등의 저장 요소를 하나씩 참조하며 함수
 Optional 객체의 chaining 을 끝내는 메소드
 
 1. ifPresent
+
 ```java
 // 메서드 시그니처
 public void ifPresent(Consumer<? super T> consumer);
@@ -175,6 +182,7 @@ Optional.ofNullable(null).ifPresent((value) -> {
 ```
 
 2. isPresent
+
 ```java
 // 메서드 시그니처
 public boolean isPresent();
@@ -186,6 +194,7 @@ Optional.ofNullable("test").filter((val) -> "result".eqauls(val)).isPresent(); /
 연산이 끝난 후 객체가 존재하는 지의 여부 판단 후 boolean 반환
 
 3. get
+
 ```java
 // 메서드 시그니처
 public T get();
@@ -195,6 +204,7 @@ Optional.ofNullable(null).get(); // NoSuchElementException!
 ```
 
 4. orElse
+
 ```java
 // 메서드 시그니처
 public T orElse(T other);
@@ -204,6 +214,7 @@ System.out.println(result); // print 'default'
 ```
 
 5. orElseGet
+
 ```java
 // 메서드 시그니처
 public T orElseGet(Supplier<? extends T> other);
@@ -213,6 +224,7 @@ System.out.println(result); // print 'default'
 ```
 
 6. orElseThrow
+
 ```java
 // 메서드 시그니처
 public T orElseThrow();
