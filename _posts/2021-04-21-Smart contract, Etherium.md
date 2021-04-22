@@ -3,7 +3,7 @@ layout: post
 title:  "Nomad Coder 님 영상 요약 #3.Smart contract, etherium"
 summary: "Smart contract, etherium"
 author: 2rohyun
-date: '2021-04-21 11:17:23 +0900'
+date: '2021-04-21 14:17:23 +0900'
 category: blockchain
 thumbnail: /assets/img/posts/smart_contracts.png 
 keywords: blockchain, Smart contract, etherium

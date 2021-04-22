@@ -3,7 +3,7 @@ layout: post
 title:  "Nomad Coder 님 영상 요약 #7.Disadvantages of Crypto currency (1)"
 summary: "Disadvantages of Crypto currency"
 author: 2rohyun
-date: '2021-04-21 11:17:23 +0900'
+date: '2021-04-22 17:17:23 +0900'
 category: blockchain
 thumbnail: /assets/img/posts/scam.png 
 keywords: blockchain, Disadvantages of Crypto currency, scam

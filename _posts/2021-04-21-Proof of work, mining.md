@@ -3,7 +3,7 @@ layout: post
 title:  "Nomad Coder 님 영상 요약 #2.Proof of work, mining"
 summary: "Proof of work, mining"
 author: 2rohyun
-date: '2021-04-21 11:17:23 +0900'
+date: '2021-04-21 13:17:23 +0900'
 category: blockchain
 thumbnail: /assets/img/posts/pow_mining.png 
 keywords: blockchain, proof of work, mining 

@@ -3,7 +3,7 @@ layout: post
 title:  "Nomad Coder 님 영상 요약 #4.NFT"
 summary: "concept of NFT"
 author: 2rohyun
-date: '2021-04-21 11:17:23 +0900'
+date: '2021-04-21 15:17:23 +0900'
 category: blockchain
 thumbnail: /assets/img/posts/NFT.png 
 keywords: blockchain, NFT
