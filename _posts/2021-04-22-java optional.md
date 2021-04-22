@@ -25,6 +25,7 @@ public static <T> Optional<T> of(T value);
 // 예제
 Optional<String> opt = Optional.of("result");
 ```
+
 value가 null 인 경우 NPE 예외 발생, 반드시 값이 있어야 하는 객체인 경우 사용
 
 2. Optional.ofNullable
@@ -34,6 +35,7 @@ public static <T> Optional<T> ofNullable(T value);
 // 예제
 Optional<String> opt = Optional.ofNullable(null);
 ```
+
 value가 null 인 경우 비어있는 Optional 객체 반환, 값이 Null 일 수도 있는 경우 사용
 
 3. Optional.empty
@@ -43,6 +45,7 @@ public static<T> Optional<T> empty();
 // 예제
 Optional<String> emptyOpt = Optional.empty();
 ```
+
 비어있는 Optional 객체 생성, 조건에 따라 분기를 태우고 반환할 값이 없는 경우 사용
 
 `비어있는 Optional 객체란?`
@@ -92,6 +95,7 @@ final List<String> names = Arrays.asList("Sehoon", "Songwoo", "Chan", "Youngsuk"
                 names.stream().filter(name -> name.startsWith("S"))
                                 .collect(Collectors.toList());
 ```
+
 predicate 값이 참이면 해당 필터 통과, 거짓이면 통과 X
 
 2. map
@@ -114,6 +118,7 @@ final List<String> names = Arrays.asList("Sehoon", "Songwoo", "Chan", "Youngsuk"
                 .map(name -> name.toUpperCase())
                 .forEach(name -> System.out.println(name));
 ```
+
 mapper 함수를 통해 입력값을 다른 값으로 변환하는 메소드이다.
 
 3. flatMap
@@ -132,6 +137,7 @@ map과 flatMap 모두 쉽게 사용이 가능하며 차이점은 하나의 입�
 `나중에 따로 포스트로 정리해야할 부분( map vs flatMap )`
 
 4. stream
+
 ```java
 List<String> names = Arrays.asList("jeong", "pro", "jdk", "java");
 // 기존의 코딩 방식
@@ -176,6 +182,7 @@ public boolean isPresent();
 Optional.ofNullable("test").isPresent(); // true
 Optional.ofNullable("test").filter((val) -> "result".eqauls(val)).isPresent(); // false
 ```
+
 연산이 끝난 후 객체가 존재하는 지의 여부 판단 후 boolean 반환
 
 3. get
