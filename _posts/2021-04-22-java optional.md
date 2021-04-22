@@ -45,7 +45,7 @@ Optional<String> emptyOpt = Optional.empty();
 ```
 비어있는 Optional 객체 생성, 조건에 따라 분기를 태우고 반환할 값이 없는 경우 사용
 
-::비어있는 Optional 객체란?::
+`비어있는 Optional 객체란?`
 ```java
 * 비어있는 옵셔널 객체
 ----------
@@ -126,9 +126,10 @@ String result = Optional.of("result")
         .get();
 System.out.println(result); // print 'good'
 ```
+
 map과 flatMap 모두 쉽게 사용이 가능하며 차이점은 하나의 입력을 다시 하나의 리턴인 경우에는 map을 하나의 입력을 다시 stream 혹은 Optional로 변환을 하고자할때는 flatmap을 사용한다. 
 
-::나중에 따로 포스트로 정리해야할 부분( map vs flatMap )::
+`나중에 따로 포스트로 정리해야할 부분( map vs flatMap )`
 
 4. stream
 ```java
@@ -147,6 +148,7 @@ count = 0;
 count = names.stream().filter(x -> x.contains("o")).count();
 System.out.println("Count : " + count); // 2
 ```
+
 stream은 컬렉션, 배열등의 저장 요소를 하나씩 참조하며 함수형 인터페이스(람다식)를 적용하며 반복적으로 처리할 수 있도록 해주는 기능이다.
 
 ## Optional 종단 처리
@@ -213,8 +215,9 @@ Optional.ofNullable(something).orElseThrow(NoSuchElementException::new);
 Optional.ofNullable(something).orElseThrow();
 ```
 
-::orElse vs orElseGet::
+`orElse vs orElseGet`
 orElse 메서드는 옵셔널 객체가 비어있든 비어있지 않든 반드시 실행 /
 orElseGet 메서드는 옵셔널 객체가 비어있으면 실행
+
 **무조건 orElseGet 만 사용하자 !** 
 
