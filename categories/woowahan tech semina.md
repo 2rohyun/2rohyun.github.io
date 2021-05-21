@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Woowahan Tech Semina
-permalink: /blog/categories/woowahan-tech-semina/
+permalink: /blog/categories/woowahan_tech_semina/
 ---
 
 <h5> Posts by Category : {{ page.title }} </h5>
