@@ -1,6 +1,6 @@
 ---
 layout: page
-title: semina & conference
+title: semina
 permalink: /blog/categories/semina/
 ---
 
