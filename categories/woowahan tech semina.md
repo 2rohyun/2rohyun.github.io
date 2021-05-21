@@ -1,6 +1,6 @@
 ---
 layout: page
-title: woowahan tech semina
+title: Woowahan Tech Semina
 permalink: /blog/categories/woowahan-tech-semina/
 ---
 
