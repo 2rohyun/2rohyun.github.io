@@ -11,15 +11,19 @@ permalink: /blog/spring-sql-mapper-orm/
 usemathjax: false
 ---
 # spring SQL Mapper vs ORM
+
 ## SQL Mapper
+
 직접 SQL 문을 작성하여 Data Base 에 접근하는 것
 Ex ) Mybatis
 
 ## ORM(Object Relational Mapping)
+
 DB의 데이터를 객체로 매핑시켜 데이터를 접근하는 것
 Ex ) JPA, Hibernate
 
 ### Mybatis
+
 Java에서는 DB에 접근할 수 있도록 JDBC라는 라이브러리를 제공하는데, JDBC를 사용하기 쉽게 만들어주는 것이 **Mybatis**이다. JDBC로 처리하는 부분의 일부를 코드와 파라미터 설정으로 매핑을 대신해준다.
 ```
 장점
@@ -30,6 +34,7 @@ Java에서는 DB에 접근할 수 있도록 JDBC라는 라이브러리를 제공
 ```
 
 ### JPA(Java Persistent API)
+
 Java ORM 기술에 대한 API 표준 명세로, 이것 또한 Java에서 제공하는 API이다.
 사용할 때 JPA, Spring Data JPA, Hibernate를 혼동하기 쉽다.
 * JPA는 Java application에서 RDBMS를 사용하는 방식을 정의한 **인터페이스**이다. 따라서 라이브러리가 아니므로 구현 자체가 없다.

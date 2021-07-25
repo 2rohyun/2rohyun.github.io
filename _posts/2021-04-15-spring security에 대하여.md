@@ -11,13 +11,16 @@ permalink: /blog/about-spring-security/
 usemathjax: false
 ---
 # Spring Security 에 대하여
+
 ## security가 필요한 이유
+
 웹 사이트는 그 사이트 자체의 리소스가 있고, 그 웹 사이트를 이용하는 유저들의 개인 정보를 가지고 있다. 악의적으로 리소스나 개인정보를 탈취하려는 행동을 막을 방법이 필요하게 되고 그러한 것들을 서포트 해주는 것이 spring security 이다.
 Security 는 크게 두 가지로 나뉜다. 
 - 인증 ( Authentication )
 - 권한 ( Authorization )
 
 ## 인증 ( Authentication )
+
 사이트에 접근하는 사람이 누구인지 시스템이 알아야 합니다. 익명사용자(anonymous user)를 허용하는 경우도 있지만, 특정 리소스에 접근하거나 개인화된 사용성을 보장 받기 위해서는 반드시 로그인하는 과정이 필요하다. 
 로그인은 보통 username / password 를 입력하고 로그인하는 경우와 sns 사이트를 통해 인증을 대리하는 경우가 있다.
 - user name / password 인증
@@ -26,6 +29,7 @@ Security 는 크게 두 가지로 나뉜다.
 - Sns 로그인 (소셜 로그인) : 인증 위임
 
 ## 권한 ( Authorization )
+
 사용자가 누구인지 알았다면 사이트 관리자 혹은 시스템은 로그인한 사용자가 어떤 일을 할 수 있는지 권한을 설정한다. 
 권한은 특정 페이지에 접근하거나 특정 리소스에 접근할 수 있는 권한여부를 판단하는데 사용됩니다. 개발자는 권한이 있는 사용자에게만 페이지나 리소스 접근을 허용하도록 코딩해야 하는데, 이런 코드를 쉽게 작성할 수 있도록 프레임워크를 제공하는 것이 스프링 시큐리티 프레임워크(Spring Security Framework) 이다.
 - Secured : deprecated —> annotation check
@@ -34,6 +38,7 @@ Security 는 크게 두 가지로 나뉜다.
 - AOP를 이용하여 권한을 check
 
 ## 서블릿 컨테이너
+
 톰켓과 같은 웹 애플리케이션을 서블릿 컨테이너라고 부르는데, 이런 웹 애플리케이션(J2EE Application)은 기본적으로 필터와 서블릿으로 구성
 
 ![photo](/assets/img/posts/servlet-container.png){: width="50%" height="50%"}
@@ -41,6 +46,7 @@ Security 는 크게 두 가지로 나뉜다.
  - 필터는 체인처럼 엮여있기 때문에 필터 체인이라고도 불리는데, 모든 request 는 이 필터 체인을 반드시 거쳐야만 서블릿 서비스에 도착하게 된다.
 
 ## Security Filter
+
 ![photo2](/assets/img/posts/security-filter.png){: width="50%" height="50%"}
 
 - 스프링 시큐리티는 DelegatingFilterProxy 라는 필터를 만들어 메인 필터체인에 끼워넣고, 그 아래 다시 SecurityFilterChain 그룹을 등록
@@ -48,6 +54,7 @@ Security 는 크게 두 가지로 나뉜다.
 - web resource 의 경우 패턴을 따르더라도 필터를 무시(ignore)하고 통과시켜주기도 한다.
 
 ## Filter의 종류
+
 *HeaderWriterFilter* : Http 해더를 검사한다. 써야 할 건 잘 써있는지, 필요한 해더를 더해줘야 할 건 없는가?
 
 *CorsFilter* : 허가된 사이트나 클라이언트의 요청인가?

@@ -12,10 +12,13 @@ usemathjax: false
 ---
 
 # Java Optional
+
 ## 1. Optional 사용 이유
+
 java.lang.NullPointerException을 안전하게 처리하기 위해
 
 ## 2. Optional 객체 생성
+
 Optional 객체를 생성하기 위한 시작 연산자
 
 1. Optional.of
@@ -70,6 +73,7 @@ Optional<String> emptyOpt = Optional.empty();
 ```
 
 ## 3. Optional 중간 처리
+
 Optional 객체를 생성한 후 사용 가능한 메소드, 다시 Optional 객체를 반환한다.
 
 1. filter
@@ -164,6 +168,7 @@ System.out.println("Count : " + count); // 2
 stream은 컬렉션, 배열등의 저장 요소를 하나씩 참조하며 함수형 인터페이스(람다식)를 적용하며 반복적으로 처리할 수 있도록 해주는 기능이다.
 
 ## Optional 종단 처리
+
 Optional 객체의 chaining 을 끝내는 메소드
 
 1. ifPresent
