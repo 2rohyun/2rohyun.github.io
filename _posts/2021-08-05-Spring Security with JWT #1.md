@@ -106,6 +106,25 @@ usemathjax: false
 
 - 단순하게 말하면, JWT는 클레임을 인코딩하고 확인할 수 있는 편리한 방법! 베어러 토큰은 권한 부여에 사용되는 문자열일 뿐이다!
 
+## 5. JWT implementation Libraries for Java
+
+- 라이브러리 종류
+    - com.auth0 / java-jwt 
+    - org.bitbucket.b_c / jose4j
+    - com.nimbusds / nimbus-jose-jwt 
+    - io.jsonwebtoken / jjwt 
+    - com.inversoft / prime-jwt 
+    - io.vertx / vertx-auth-jwt 
+
+- 위와 같이 JWT 를 구현할 수 있는 다양한 라이브러리들이 존재한다. 나는 jjwt 와 com.auth0 를 이용하여 JWT 를 구현해보았고, jose4j 와 nimbus-jose-jwt 도 많이 사용되어지고 레퍼런스 또한 많지만 새로운 구현 방식을 배우는 소요가 든다고 판단하여 io.jsonwebtoken 이나 com.auth0 을 고려하였다.
+
+- [jjwt github link](https://github.com/jwtk/jjwt) 
+
+- [auth0 github link](https://github.com/auth0/java-jwt)
+
+- 두 레포지토리의 스타 수와 컨트리뷰션을 보았을 떄, 괄목할만한 차이를 보이지 않았고 둘 다 많은 레퍼런스를 보유하고 있었다. 오히려 다양한 블로그를 참고했을 때, 한국에서는 jjwt 를 훨씬 더 많이 사용하고 있는 것으로 보여졌다. 하지만 이 것은 의사 결정의 중요한 요인은 되지 못한다고 생각하였고, 두 방식으로 모두 JWT 를 구현해본 바, 나에게 조금이라도 더 직관적이면서 쉽고 간편하게 다가오는 auth0 에서 제공해주는 라이브러리를 사용하기로 하였다.
+
+
 ### REFERENCE
 
 https://datatracker.ietf.org/doc/html/rfc7519
