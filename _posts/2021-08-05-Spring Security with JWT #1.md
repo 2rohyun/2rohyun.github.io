@@ -26,6 +26,7 @@ usemathjax: false
         - 토큰 기반 인증 ( STATELESS )
     - SNS 로그인 ( 인증 위임 )
 
+
 - 권한(Authorization) : 사용자가 누구인지 알았다면 사이트 관리자 혹은 시스템은 로그인한 사용자가 어떤 일을 할 수 있는지 권한을 설정한다. 권한은 특정 페이지에 접근하거나 특정 리소스에 접근할 수 있는 권한여부를 판단하는데 사용된다. 개발자는 권한이 있는 사용자에게만 페이지나 리소스 접근을 허용하도록 코딩해야 하는데, 이런 코드를 쉽게 작성할 수 있도록 프레임워크를 제공하는 것이 스프링 시큐리티 프레임워크(Spring Security Framework) 이다.
 
 > 쉽게 예를 들어 설명하자면, 인증이란 건물 내에 출입할 수 있는 지의 여부를 판단하는 것이고, 권한이란 건물 내의 어떠한 층이나 방에 출입할 수 있는 지의 여부라고 생각하면 편할 것이다.
@@ -38,13 +39,16 @@ usemathjax: false
     - 쿠키에 정보가 담겨있기 때문에 브라우저는 해당 사이트에 대한 모든 Request 에 Session ID 를 쿠키에 담아 전송한다.
     - 서버는 클라이언트가 보낸 Session ID 와 서버 메모리로 관리하고 있는 Session ID 를 비교하여 Verification 을 수행한다.
 
+
 - 세션 기반 인증의 장점
     - 상대적으로 안전하다. 서버측에서 관리하기 때문에 클라이언트 변조에 영향받거나 데이터 손상 우려가 없다.
     - 직접 경험해본 바로, Spring Security 에서 토큰 기반의 인증 방식보다 구현이 단순하고 명료하며, RememberMe Token 과 같은 다양한 기능을 편하게 사용할 수 있다.
 
+
 - 세션 기반 인증의 단점
     - 서버를 여러대 둘 경우 (scale out) 또는 같은 사용자가 서로 다른 도메인의 데이터를 요청할 경우, (SSO) 에는 세션을 유지하기 위한 비용이 매우 커지게 된다.
     - 서버의 메모리에 세션을 저장해야하므로 서버에 부담을 주게된다.
+
 
 - 토큰 기반 인증
     - 유저가 로그인을 하면 Token 을 발급한다.
@@ -52,9 +56,11 @@ usemathjax: false
     - 클라이언트는 요청 시 저장된 Token 을 Header Authorization 필드에 포함시켜 보낸다. 
     - 서버는 매 요청시 클라이언트로부터 전달받은 Header 의 Token 정보를 Verification 한 뒤, 해당 유저에 권한을 인가한다.
 
+
 - 토큰 기반 인증의 장점
     - 클라이언트에 저장되기 때문에 서버의 메모리에 부담이 되지않으며 Scale out 에 대한 추가적인 소요가 없다.
     - 멀티 디바이스 환경에 적합하다.
+
 
 - 토큰 기반 인증의 단점
     - 이미 발급된 JWT에 대해서는 돌이킬 수 없다. 따라서 탈취되어도 토큰 유효기간동안 계속해서 사용할 수 있다. ( 보완책 ) Refresh Token
@@ -101,10 +107,15 @@ usemathjax: false
 ### REFERENCE
 
 https://datatracker.ietf.org/doc/html/rfc7519
+
 https://datatracker.ietf.org/doc/html/rfc6750
+
 https://stackoverflow.com/questions/40375508/whats-the-difference-between-jwts-and-bearer-token
+
 https://mangkyu.tistory.com/56 [MangKyu's Diary]
+
 https://jins-dev.tistory.com/entry/Session-기반-인증과-Token-기반-인증 [Jins' Dev Inside]
+
 https://tansfil.tistory.com/58
 
 
