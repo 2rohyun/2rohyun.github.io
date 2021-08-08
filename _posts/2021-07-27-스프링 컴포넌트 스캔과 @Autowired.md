@@ -154,7 +154,7 @@ public class ComponentFilterAppConfigTest {
     - @Nullable : 자동 주입할 대상이 없으면 null 이 입력된다.
     - Optional<> : 자동 주입할 대상이 없으면 Optional.empty 가 입력된다.
 
- ## 생성자 주입을 선택해라!
+## 생성자 주입을 선택해라!
 
  - 불변
     - 대부분의 의존관계 주입은 한 번 일어나면 애플리케이션 종료시점까지 의존 관계를 변경할 일이 없다. 오히려 대부분의 의존관계는 애플리케이션 종료 전까지 변하면 안된다.
