@@ -7,7 +7,7 @@ date: '2021-07-27 16:45:00 +0900'
 category: spring
 thumbnail: /assets/img/posts/springboot.png
 keywords: spring, di, autowired, component scan
-permalink: /blog/spring-autowired/
+permalink: /blog/spring-autowired-component/
 usemathjax: false
 ---
 

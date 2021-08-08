@@ -7,7 +7,7 @@ date: '2021-08-05 15:45:00 +0900'
 category: spring
 thumbnail: /assets/img/posts/jwt.png
 keywords: spring security, jwt, session, jjwt, auth0, nimbus
-permalink: /blog/spring-jwt/
+permalink: /blog/spring-jwt-with-security/
 usemathjax: false
 ---
 
