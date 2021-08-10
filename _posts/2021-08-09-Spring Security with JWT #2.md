@@ -123,7 +123,7 @@ Authentication authenticate(Authentication authentication) throws Authentication
 - FilterChainProxy
     - 보통 "springSecurityFilterChain" 이라는 이름의 빈으로 등록된다.
  
-![delegating](/assets/img/posts/delegating.png){: width="33%" height="33%"}
+![delegating](/assets/img/posts/delegating.png){: width="50%" height="50%"}
 
 ## 6. AccessDecisionManager 와 FilterSecurityInterceptor
 
@@ -140,7 +140,7 @@ Authentication authenticate(Authentication authentication) throws Authentication
 
 ## 7. 스프링 시큐리티 아키텍처 정리
 
-![securityarchitecture](/assets/img/posts/securityarchitecture.png){: width="50%" height="50%"}
+![securityarchitecture](/assets/img/posts/securityarchitecture.png){: width="66%" height="66%"}
 
 ### REFERENCE
 
