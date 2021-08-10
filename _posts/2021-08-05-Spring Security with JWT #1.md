@@ -11,8 +11,6 @@ permalink: /blog/spring-jwt-with-security/
 usemathjax: false
 ---
 
-# Spring Security with JWT #1. 배경지식 및 의사결정
-
 ## 0. 들어가기 앞서
 
 평소 세션에 기반한 인증과 토큰에 기반한 인증 모두 사용해보고, 구현해 보았지만 Spring Security 의 아키텍처 및 인증과 권한의 구조에 대하여 깊이 이해하고 사용한다는 느낌을 갖지 못하였다. 그러던 중, 회사의 새로운 프로젝트와 8월에 출전하는 공개SW 개발자 대회에서 JWT 를 이용한 인증 및 권한 시나리오가 필요하게 되었고, 이에 따라 전체적인 배경지식부터 의사결정, 그리고 설계 및 구현에 대하여 정리하고 문서화하고자 한다. 또한 이번 포스트 시리즈에서는 Spring Security 및 JWT 구현, Redis 를 이용한 Refresh token 구현 및 저장에 초점을 둘 것이기에, 인증 및 권한, 세션 기반 인증 및 토큰 기반 인증, Bearer token 등의 선수 지식에 대해서는 간단하게만 정리하려고 한다.

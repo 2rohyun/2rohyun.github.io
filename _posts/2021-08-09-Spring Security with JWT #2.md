@@ -11,8 +11,6 @@ permalink: /blog/spring-jwt-with-security-two/
 usemathjax: false
 ---
 
-# Spring Security with JWT #2. Spring Security Architecture
-
 ## 0. 들어가기 앞서
 
 본격적으로 auth0.com 에서 제공해주는 jwt implementation libarary 를 사용하여 jwt 를 구현하기 전에, 인프런의 백기선님의 강의를 참고하여 Spring Security Architecture 에 대해 divide-and-conquer 방식으로 이해를 돕고자 한다.
