@@ -19,32 +19,7 @@ usemathjax: false
 
 #### 프로젝트 구조
 
-   └── java
-       └── main
-           └── com
-               └── dohyun
-                   └── amigoscodejwt
-                       ├── AmigoscodeJwtApplication.class
-                       ├── api
-                       │   └── AppUserController.class
-                       ├── config
-                       │   ├── RedisConfig.class
-                       │   └── SecurityConfig.class
-                       ├── domain
-                       │   ├── AppUser.class
-                       │   └── Role.class
-                       ├── filter
-                       │   ├── CustomAuthenticationFilter.class
-                       │   └── CustomAuthorizationFilter.class
-                       ├── repository
-                       │   ├── AppUserRepository.class
-                       │   └── RoleRepository.class
-                       ├── service
-                       │   ├── AppUserService.class
-                       │   └── AppUserServiceImpl.class
-                       └── util
-                           ├── RedisUtil.class
-                           └── RequestToJsonUtil.class
+![projecttree](/assets/img/posts/projecttree.png){: width="40%" height="40%"}
 
 #### build.gradle
 
