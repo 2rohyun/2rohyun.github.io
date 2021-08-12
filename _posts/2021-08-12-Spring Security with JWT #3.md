@@ -530,8 +530,11 @@ public class CustomAuthorizationFilter extends OncePerRequestFilter {
 ### REFERENCE
 
 https://velog.io/@ehdrms2034/Spring-Security-JWT-Redis%EB%A5%BC-%ED%86%B5%ED%95%9C-%ED%9A%8C%EC%9B%90%EC%9D%B8%EC%A6%9D%ED%97%88%EA%B0%80-%EA%B5%AC%ED%98%84
+
 https://www.youtube.com/watch?v=VVn9OG9nfH0&t=3s
+
 https://velog.io/@tlatldms/%EC%84%9C%EB%B2%84%EA%B0%9C%EB%B0%9C%EC%BA%A0%ED%94%84-Refresh-JWT-%EA%B5%AC%ED%98%84
+
 https://minkukjo.github.io/framework/2020/12/18/Spring-142/
 
   
