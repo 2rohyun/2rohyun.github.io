@@ -91,7 +91,7 @@ JWT 로 인증과 권한을 관리하는 방식의 특성 상 STATELESS 하기 �
 
 #### build.gradle
 
-```java
+```groovy
     // https://mvnrepository.com/artifact/org.springframework.data/spring-data-redis
     implementation group: 'org.springframework.data', name: 'spring-data-redis', version: '2.5.2'
     // https://mvnrepository.com/artifact/io.lettuce/lettuce-core
