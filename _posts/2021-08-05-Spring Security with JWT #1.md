@@ -4,7 +4,7 @@ title:  "Spring Security with JWT #1. 배경지식 및 의사결정"
 summary: "Spring Security with JWT #1. 배경지식 및 의사결정"
 author: 2rohyun
 date: '2021-08-05 15:45:00 +0900'
-category: spring
+category: spring-security
 thumbnail: /assets/img/posts/jwt.png
 keywords: spring security, jwt, session, jjwt, auth0, nimbus
 permalink: /blog/spring-jwt-with-security/

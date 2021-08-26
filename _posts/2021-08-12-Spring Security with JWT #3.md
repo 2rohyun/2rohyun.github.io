@@ -4,7 +4,7 @@ title:  "Spring Security with JWT #3. Access token, Refresh token 구현"
 summary: "Spring Security with JWT #3. Access token, Refresh token 구현"
 author: 2rohyun
 date: '2021-08-12 13:45:00 +0900'
-category: spring
+category: spring-security
 thumbnail: /assets/img/posts/jwt.png
 keywords: spring security, jwt, access token, refresh token
 permalink: /blog/spring-jwt-with-security-three/

@@ -4,7 +4,7 @@ title:  "spring boot 비밀번호 암호화하기"
 summary: "비밀번호 암호화"
 author: 2rohyun
 date: '2021-04-15 12:42:23 +0900'
-category: spring
+category: spring-security
 thumbnail: /assets/img/posts/springboot.png
 keywords: spring, spring boot, password, encrypt
 permalink: /blog/spring-boot-비밀번호-암호화/

@@ -4,7 +4,7 @@ title:  "Spring Security with JWT #2. Spring Security Architecture"
 summary: "Spring Security with JWT #2. Spring Security Architecture"
 author: 2rohyun
 date: '2021-08-09 18:45:00 +0900'
-category: spring
+category: spring-security
 thumbnail: /assets/img/posts/jwt.png
 keywords: spring security, jwt, architecture
 permalink: /blog/spring-jwt-with-security-two/

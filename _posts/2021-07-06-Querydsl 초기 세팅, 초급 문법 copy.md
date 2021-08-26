@@ -4,7 +4,7 @@ title:  "Querydsl 초기 세팅, 초급 문법"
 summary: "Querydsl"
 author: 2rohyun
 date: '2021-07-01 11:45:00 +0900'
-category: spring
+category: spring-data
 thumbnail: /assets/img/posts/querydsl.png
 keywords: spring, jpa, querydsl
 permalink: /blog/querydsl-first/

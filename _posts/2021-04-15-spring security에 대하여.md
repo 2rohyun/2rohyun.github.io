@@ -4,7 +4,7 @@ title:  "spring security 에 대하여"
 summary: "spring security"
 author: 2rohyun
 date: '2021-04-15 12:42:23 +0900'
-category: spring
+category: spring-security
 thumbnail: /assets/img/posts/springboot.png
 keywords: spring, spring security
 permalink: /blog/about-spring-security/

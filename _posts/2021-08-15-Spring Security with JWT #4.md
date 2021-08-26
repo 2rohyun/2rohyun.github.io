@@ -4,7 +4,7 @@ title:  "Spring Security with JWT #4. Refresh token 관리 방안과 로그아�
 summary: "Spring Security with JWT #4. Refresh token 관리 방안과 로그아웃"
 author: 2rohyun
 date: '2021-08-15 18:45:00 +0900'
-category: spring
+category: spring-security
 thumbnail: /assets/img/posts/jwt.png
 keywords: spring security, jwt, refresh token, logout
 permalink: /blog/spring-jwt-with-security-four/

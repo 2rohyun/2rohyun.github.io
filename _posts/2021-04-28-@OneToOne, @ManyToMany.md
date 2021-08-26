@@ -4,7 +4,7 @@ title:  "@OneToOne, @ManyToMany"
 summary: "1:1 과 N:M 연관관계 매핑"
 author: 2rohyun
 date: '2021-04-28 15:06:00 +0900'
-category: spring
+category: spring-data
 thumbnail: /assets/img/posts/jpa.png
 keywords: spring, jpa, onetoone, manytomany
 permalink: /blog/jpa-one-to-one/

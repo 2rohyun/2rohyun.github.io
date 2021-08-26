@@ -4,7 +4,7 @@ title:  "spring security authentication 메커니즘"
 summary: "spring security 인증"
 author: 2rohyun
 date: '2021-04-15 12:42:23 +0900'
-category: spring
+category: spring-security
 thumbnail: /assets/img/posts/springboot.png
 keywords: spring, spring security, authentication
 permalink: /blog/spring-security-authentication/
