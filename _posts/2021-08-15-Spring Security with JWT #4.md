@@ -384,7 +384,7 @@ public class RedisUtils {
 
 이번 포스트를 작성하기 전에는 단순하게 Access Token, Refresh Token 을 발급해주고 각자의 역할에 맞게 사용하면 그만인 단순하고 쉬운 구현이라고 생각했다. 하지만 구현을 실제로 진행하며 보안을 높이기 위해 다양한 관리 전략 및 시나리오가 존재하고 정석적으로 존재하는 방법이 없다는 것을 알았다. 또한 구현을 하며 생각보다 많은 조건을 생각하며 모두 분기처리 해주어야 하고, 성능적인 관점에서도 바라보아야 했다. 역시 이번에도 "직접 해보기 전에는 쉬워 보인다, 깊게 알면 알수록 디테일이 중요하다." 라는 진리를 체감하게 되었다. 구현을 해보며 아쉬웠던 점은, 첫 번째로, Refresh Token 으로 Token Family List 를 저장하는 것이다. 사용자의 최신 Refresh Token 이 아닌 예전의 Refresh Token 으로 접근한 경우, 해당 사용자의 Token Family 를 모두 삭제하고 에러 메세지를 날리고, Refresh Token 이 없는 경우 에러 메세지만 날린다. 결국 두 가지 경우 모두 재인증을 하여 Access Token 과 Refresh Token 을 다시 발급 받아야 하는데 과연 유의미한 분기 처리일까? 에 대한 문제이다. 결국 모두 재인증을 해야한다면, 새로운 Access Token 및 Refresh Token 을 발급해줄 때 기존의 Refresh Token 을 Redis 에서 삭제하고 새로 발급해준 Refresh Token 을 저장한다면, Token Family 를 List 로 가지고 있지 않아도 되므로 메모리 및 성능적으로 더 좋은 퍼포먼스를 발휘할 수 있지 않을까? 라는 생각이다. 그리고 두 번째로, 로그인 요청 및 Refresh Token 을 이용한 Access Token 재발급 요청을 제외한 모든 요청에 대해 토큰의 blacklist 여부를 검사하는 로직이 마음에 걸린다. 물론 Redis 는 매우 빠르고, 가벼운 데다 {key:value} 쌍으로 데이터가 저장되기 때문에 O(1) 의 시간 복잡도를 가져 트랜잭션을 길게 물고 있을 경우가 최소 blacklist 검사에서는 없다는 것을 알지만 그래도! 더 좋은 방법이 존재하지 않을까? 에 대한 아쉬움이 남는다. 이번 포스트에서 그치지 않고 더욱 깊게 찾아보고 알아볼 생각이다.
 
- ### REFERENCE
+### REFERENCE
 
 https://jojoldu.tistory.com/418
 
