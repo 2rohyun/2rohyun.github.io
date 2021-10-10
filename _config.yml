@@ -35,9 +35,9 @@ author_website_url: "https://2rohyun.github.io"
 typewrite-text: 개발, 그리고 복잡한 머릿 속의 기록을 남기는 공간
 
 # Experiences
-author_work_experiences:
-            - company_url: https://www.notion.so/8e23d4f11f8b4f5f8ab3e1460c2b5906
-              visibility: true
+# author_work_experiences:
+#             - company_url: https://www.notion.so/8e23d4f11f8b4f5f8ab3e1460c2b5906
+#               visibility: true
 
 # Education
 author_education_details:
